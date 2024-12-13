@@ -1,7 +1,20 @@
-.page_pic img{
-    width: 90%;
-    margin: 0 10em;
+body{
+    padding: 0;
+    margin: 0;
 }
+
+.g_pic{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    object-fit: contain;
+
+}
+
+
 
 h1{
     text-align: center;
@@ -24,8 +37,16 @@ text-align: center;
     margin: 0 10em;
 }
 
-.two_pics img{
-    width: 80%;
+.product img{
+    width: 300%;
 }
 
-
+.genre_container {
+    position: relative; /* Makes the container the reference point for positioning */
+  }
+  
+  .genre_container > a {
+    position: absolute; /* Allows precise positioning */
+    top: 0; /* Align it to the top of the container */
+    right: 0; /* Align it to the right side */
+  }

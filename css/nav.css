@@ -3,7 +3,7 @@ header {
     position: relative;
     text-align: center;
     display: flex;
-    justify-content: space-between; 
+    justify-content: center; 
     align-items: center; 
     padding: 0 10px; 
     max-width: 100%;
@@ -14,8 +14,16 @@ header {
     height: 40px; 
     display: inline-block; 
     object-fit: contain;
+    position: absolute; /* Position it relative to the viewport */
+    top: 10px; /* Margin from the top */
+    left: 10px; /* Margin from the left */
+    z-index: 1000; /* Ensure it appears above other elements */
+    display: block;
   }
 
+  .logo {
+    text-align: center; /* Ensure the logo is centered */
+}
   
   nav ol {
     display: flex;
@@ -54,17 +62,29 @@ header {
 
  footer div{
     display: flex;
-
     justify-content: space-between;
   }
 
   .info p{
-    margin-right: 5em;
+    margin: 0 5em;
+
   }
 
 p{
     font-family: Helvetica;
     font-weight: lighter;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+}
+
+.links img{
+    width: auto; 
+    height: 70px; 
+    display: inline-block; 
+    object-fit: contain;
 }
 
   
