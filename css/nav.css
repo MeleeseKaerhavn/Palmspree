@@ -1,0 +1,93 @@
+
+header {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 10px; 
+    max-width: 100%;
+  }
+
+  .cart{
+    width: auto; 
+    height: 40px; 
+    display: inline-block; 
+    object-fit: contain;
+  }
+
+  
+  nav ol {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+
+  nav li{
+    margin: 3em;
+  }
+
+  nav a{
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  nav a:hover{
+    font-size: 1.5em;
+  }
+
+
+  .burger-menu {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+  }
+
+  #burger-toggle {
+    display: none;
+  }
+
+
+ footer div{
+    display: flex;
+
+    justify-content: space-between;
+  }
+
+  .info p{
+    margin-right: 5em;
+  }
+
+p{
+    font-family: Helvetica;
+    font-weight: lighter;
+}
+
+  
+  @media (max-width: 1200px) {
+
+    .burger-menu {
+      display: block;
+    }
+  
+    nav ol {
+      display: none;
+      position: absolute;
+      top: 50px;
+      right: 0;
+      background: #ffffff; /*Skal vi have en farve her?*/
+      width: 100%;
+      z-index: 999;
+    }
+  
+
+    #burger-toggle:checked + label + nav ol {
+      display: block;
+    }
+    
+  }
+  
